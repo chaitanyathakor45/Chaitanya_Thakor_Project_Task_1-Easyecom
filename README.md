@@ -15,8 +15,6 @@ Users can **search and filter** characters by name, species, status, and gender,
 
 ---
 
----
-
 ## ✨ Features
 
 - 🔍 **Search & Filter** characters by name, species, gender, and status  
@@ -32,8 +30,7 @@ Users can **search and filter** characters by name, species, status, and gender,
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/rick-and-morty-app.git
-cd rick-and-morty-app
+git clone https://github.com/chaitanyathakor45/Chaitanya_Thakor_Project_Task_1-Easyecom.git
 ```
 ### 2. Install Dependencies  
 ```bash
@@ -44,6 +41,8 @@ npm install
 ng serve
 ```
 Open your browser at 👉 http://localhost:4200/
+
+---
 
 ## 📸 Screenshots
 <img width="1896" height="945" alt="image" src="https://github.com/user-attachments/assets/229184fa-cbfb-451d-a263-c00808c24958" />
