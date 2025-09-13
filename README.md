@@ -1,27 +1,65 @@
-# RickAndMortyApp
+# 🚀 Rick and Morty Character Explorer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
+A fun Angular application that allows users to explore **Rick and Morty characters** using the [Rick and Morty API](https://rickandmortyapi.com/).  
+Users can **search and filter** characters by name, species, status, and gender, with results displayed as responsive character cards.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🛠 Tech Stack
 
-## Code scaffolding
+- **Angular 16+** (Frontend Framework)
+- **Angular Material** (UI Components & Styling)
+- **TypeScript** (Strongly typed JavaScript)
+- **RxJS & HttpClient** (API data fetching)
+- **Rick and Morty API** (Character data source)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## ✨ Features
 
-## Running unit tests
+- 🔍 **Search & Filter** characters by name, species, gender, and status  
+- 📦 **Responsive Grid Layout** for character cards  
+- 🖼️ **Character Cards** with image, gender, species, status, and location  
+- ⏳ **Loading Spinner** while fetching data  
+- 📭 **Empty State Message** when no results are found  
+- 🎨 **Angular Material UI** for modern design and accessibility  
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## 🚀 Getting Started
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### 1. Clone the Repository
+```bash
+git clone https://github.com/<your-username>/rick-and-morty-app.git
+cd rick-and-morty-app
+```
+### 2. Install Dependencies  
+```bash
+npm install
+```
+### 3. Run the Development Server
+```bash
+ng serve
+```
+Open your browser at 👉 http://localhost:4200/
 
-## Further help
+## 📸 Screenshots
+<img width="1896" height="945" alt="image" src="https://github.com/user-attachments/assets/229184fa-cbfb-451d-a263-c00808c24958" />
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<img width="1919" height="950" alt="image" src="https://github.com/user-attachments/assets/20ae0b06-1012-45b1-afa6-1a318be0bcbe" />
+
+<img width="1919" height="875" alt="image" src="https://github.com/user-attachments/assets/29f5a18f-352f-48ea-9208-a90956d90ec8" />
+
+<img width="1890" height="455" alt="image" src="https://github.com/user-attachments/assets/a9660039-5c76-42df-9cfb-0635d28ca63a" />
+
+<img width="1896" height="941" alt="image" src="https://github.com/user-attachments/assets/3b33c1a3-fcfa-4adc-a929-57fc0196060c" />
+
+
+
+
+
+
+
+
