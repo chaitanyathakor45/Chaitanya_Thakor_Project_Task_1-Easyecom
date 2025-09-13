@@ -1,0 +1,73 @@
+<div class="search-container">
+  <form class="filter-form" (ngSubmit)="searchCharacters()">
+    <!-- Name -->
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput [(ngModel)]="filters.name" name="name" placeholder="e.g. Rick" />
+    </mat-form-field>
+
+    <!-- Species -->
+    <mat-form-field appearance="outline">
+      <mat-label>Species</mat-label>
+      <input matInput [(ngModel)]="filters.species" name="species" placeholder="e.g. Human" />
+    </mat-form-field>
+
+    <!-- Status -->
+    <mat-form-field appearance="outline">
+      <mat-label>Status</mat-label>
+      <mat-select [(ngModel)]="filters.status" name="status">
+        <mat-option value="">Any</mat-option>
+        <mat-option value="alive">Alive</mat-option>
+        <mat-option value="dead">Dead</mat-option>
+        <mat-option value="unknown">Unknown</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <!-- Gender -->
+    <mat-form-field appearance="outline">
+      <mat-label>Gender</mat-label>
+      <mat-select [(ngModel)]="filters.gender" name="gender">
+        <mat-option value="">Any</mat-option>
+        <mat-option value="female">Female</mat-option>
+        <mat-option value="male">Male</mat-option>
+        <mat-option value="genderless">Genderless</mat-option>
+        <mat-option value="unknown">Unknown</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <!-- Search Button -->
+    <button mat-raised-button color="primary" type="submit">
+      Search
+    </button>
+  </form>
+</div>
+
+<!-- Spinner -->
+<div *ngIf="isLoading" class="loading-container">
+  <mat-progress-spinner mode="indeterminate" diameter="50"></mat-progress-spinner>
+</div>
+
+<!-- Empty State -->
+<div *ngIf="!isLoading && characters.length === 0" class="empty-message">
+  <p>No characters found. Try a different search 🔍</p>
+</div>
+
+<!-- Character Cards -->
+<div class="character-container" *ngIf="!isLoading && characters.length > 0">
+  <div
+    class="card"
+    *ngFor="let character of characters"
+    matTooltip="{{ character.name }}"
+    matTooltipPosition="above"
+  >
+    <img [src]="character.image" [alt]="character.name" />
+    <div class="card-details">
+      <h3>{{ character.name }}</h3>
+      <p><strong>Gender:</strong> {{ character.gender }}</p>
+      <p><strong>Species:</strong> {{ character.species }}</p>
+      <p><strong>Status:</strong> {{ character.status }}</p>
+      <p><strong>Location:</strong> {{ character.location.name }}</p>
+      <p><strong>First Seen In:</strong> {{ character.episode[0] }}</p>
+    </div>
+  </div>
+</div>

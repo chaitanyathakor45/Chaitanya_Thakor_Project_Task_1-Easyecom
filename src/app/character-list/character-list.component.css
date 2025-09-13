@@ -1,0 +1,91 @@
+/* 🔹 Search/Filter Container */
+.search-container {
+  margin-top: 80px;  /* 👈 moves filter section clearly below navbar */
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.filter-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  width: 100%;
+  max-width: 1000px;
+
+  background: #fff;        /* optional - makes filter look like a panel */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Ensure button matches height */
+.filter-form button {
+  height: 56px; /* matches Angular Material form field height */
+}
+
+/* 🔹 Character Grid */
+.character-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .character-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .character-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 🔹 Card */
+.card {
+  background-color: white;
+  display: flex;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow-wrap: break-word;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+/* 🔹 Card Image */
+.card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+/* 🔹 Card Details */
+.card-details {
+  margin-left: 20px;
+  flex: 1;
+}
+
+.card-details p {
+  margin: 5px 0;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+.card:hover .card-details p {
+  color: #007bff;
+}

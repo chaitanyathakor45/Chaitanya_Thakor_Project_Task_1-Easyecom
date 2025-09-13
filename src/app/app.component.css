@@ -1,0 +1,41 @@
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.character-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  width: 600px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.card-details {
+  margin-left: 20px;
+}
+
+.card-details p {
+  margin: 5px 0;
+}
